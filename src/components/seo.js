@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            anotherImportantField
           }
         }
       }
@@ -67,6 +68,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `fakecompany:description`,
+          content: metaDescription
+        }
       ].concat(meta)}
     />
   )
